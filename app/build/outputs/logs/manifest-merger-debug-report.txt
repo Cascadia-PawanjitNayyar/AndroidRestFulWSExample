@@ -2,7 +2,7 @@
 manifest
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:3:5-34
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:3:5-35
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -21,7 +21,7 @@ MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/seanchung/bit272/Ex
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:8:9-34
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:8:9-35
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
@@ -39,18 +39,18 @@ MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/seanchung/bit272/Ex
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:15:9-45
 	android:theme
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:17:9-40
-activity#com.prgguru.example.RegisterActivity
+activity#com.cascadia.example.RegisterActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:18:9-21:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:20:13-45
 	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:19:13-64
-activity#com.prgguru.example.LoginActivity
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:19:13-65
+activity#com.cascadia.example.LoginActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:22:9-30:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:24:13-57
 	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:23:13-61
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:23:13-62
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
@@ -61,19 +61,19 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:28:27-74
-activity#com.prgguru.example.HomeActivity
+activity#com.cascadia.example.HomeActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:31:9-34:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:32:13-60
-activity#com.prgguru.example.SettingsActivity
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:32:13-61
+activity#com.cascadia.example.SettingsActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:35:9-38:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:37:13-60
 	android:name
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:36:13-45
-activity#com.prgguru.example.BookActivity
+activity#com.cascadia.example.BookActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:39:9-42:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:41:13-56
