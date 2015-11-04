@@ -119,7 +119,7 @@ public class RegisterActivity extends Activity {
 		// Show Progress Dialog 
 		prgDialog.show();
 		//hostAddress = "http://" + PreferenceManager.getDefaultSharedPreferences(this).getString("prefs_server","192.168.0.10") + ":8080/";
-		String hostAddress = "http://" + Utility.getHostAddress(getApplicationContext()) + "/";
+		String hostAddress = "http://" + Utility.getServerAddress(getApplicationContext()) + "/";
 		System.out.println("IP: " + hostAddress + registerURI);
 
 		// Make RESTful webservice call using AsyncHttpClient object

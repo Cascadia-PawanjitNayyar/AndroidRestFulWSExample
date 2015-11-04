@@ -83,7 +83,7 @@ public class HomeActivity extends Activity {
 		prgDialog.show();
 		// Make RESTful webservice call using AsyncHttpClient object
 		AsyncHttpClient client = new AsyncHttpClient();
-		String hostAddress = "http://" + Utility.getHostAddress(getApplicationContext()) + "/";
+		String hostAddress = "http://" + Utility.getServerAddress(getApplicationContext()) + "/";
 
 		client.get(hostAddress + bookURI, params, new AsyncHttpResponseHandler() {
 			// When the response returned by REST has Http response code '200'

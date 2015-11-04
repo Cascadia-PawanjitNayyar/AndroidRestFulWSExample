@@ -5,4 +5,4 @@
         android:key="prefs_server"
         android:persistent="true"
         />
-</PreferenceScreen><!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/res/xml/preferences.xml -->
+</PreferenceScreen><!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample/app/src/main/res/xml/preferences.xml -->

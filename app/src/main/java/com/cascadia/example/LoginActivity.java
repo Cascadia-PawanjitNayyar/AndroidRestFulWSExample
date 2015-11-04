@@ -19,7 +19,6 @@ import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.cascadia.example.R;
 
 /**
  * 
@@ -137,7 +136,7 @@ public class LoginActivity extends Activity {
 		 prgDialog.show();
 		 // Make RESTful webservice call using AsyncHttpClient object
 		 AsyncHttpClient client = new AsyncHttpClient();
-		String hostAddress = "http://" + Utility.getHostAddress(this) + "/";
+		String hostAddress = "http://" + Utility.getServerAddress(this) + "/";
 
 		System.out.println("**** IP: " + hostAddress + loginURI);
 		client.get(hostAddress+loginURI, params ,new AsyncHttpResponseHandler() {

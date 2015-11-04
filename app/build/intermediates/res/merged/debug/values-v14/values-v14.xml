@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample/app/src/main/res/values-v14/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
     </style>
-    <!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-v14/values.xml -->
+    <!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-v14/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@android:TextAppearance.Holo.SearchResult.Subtitle"/>
     <style name="TextAppearance.AppCompat.Base.SearchResult.Title" parent="@android:TextAppearance.Holo.SearchResult.Title"/>

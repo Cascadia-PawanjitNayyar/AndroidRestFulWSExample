@@ -43,4 +43,4 @@
         android:gravity="fill_horizontal|fill_vertical"
         android:layout_weight="1" />
 
-</LinearLayout><!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/res/layout/home.xml -->
+</LinearLayout><!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample/app/src/main/res/layout/home.xml -->

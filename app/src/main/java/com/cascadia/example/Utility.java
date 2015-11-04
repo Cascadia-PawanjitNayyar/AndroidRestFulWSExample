@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
  * 
  */
 public class Utility {
+	private final static String defServer = "mytomcatapp-bookmarked.rhcloud.com";
 	private static Pattern pattern;
 	private static Matcher matcher;
 	//Email Pattern
@@ -40,7 +41,7 @@ public class Utility {
 	}
 
 
-	public static String getHostAddress(Context context) {
-		return PreferenceManager.getDefaultSharedPreferences(context).getString("prefs_server","192.168.0.10");
+	public static String getServerAddress(Context context) {
+		return PreferenceManager.getDefaultSharedPreferences(context).getString("prefs_server", defServer);
 	}
 }
