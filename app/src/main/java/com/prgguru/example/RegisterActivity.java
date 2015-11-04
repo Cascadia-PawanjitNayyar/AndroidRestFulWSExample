@@ -7,6 +7,9 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,6 +23,8 @@ import com.loopj.android.http.RequestParams;
  * Register Activity Class
  */
 public class RegisterActivity extends Activity {
+	private final static String registerURI = "bookmarked/register/doregister";
+
 	// Progress Dialog Object
 	ProgressDialog prgDialog;
 	// Error Msg TextView Object
@@ -48,8 +53,24 @@ public class RegisterActivity extends Activity {
         prgDialog.setMessage("Please wait...");
         // Set Cancelable as False
         prgDialog.setCancelable(false);
+
 	}
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	// displays SettingsActivity when running on a phone
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		Intent preferencesIntent = new Intent(this, SettingsActivity.class);
+		preferencesIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(preferencesIntent);
+		return super.onOptionsItemSelected(item);
+	}
 	/**
 	 * Method gets triggered when Register button is clicked
 	 * 
@@ -97,9 +118,13 @@ public class RegisterActivity extends Activity {
 	public void invokeWS(RequestParams params){
 		// Show Progress Dialog 
 		prgDialog.show();
+		//hostAddress = "http://" + PreferenceManager.getDefaultSharedPreferences(this).getString("prefs_server","192.168.0.10") + ":8080/";
+		String hostAddress = "http://" + Utility.getHostAddress(getApplicationContext()) + "/";
+		System.out.println("IP: " + hostAddress + registerURI);
+
 		// Make RESTful webservice call using AsyncHttpClient object
 		AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.43.17:9999/useraccount/register/doregister",params ,new AsyncHttpResponseHandler() {
+        client.get(hostAddress + registerURI, params ,new AsyncHttpResponseHandler() {
         	// When the response returned by REST has Http response code '200'
              @Override
              public void onSuccess(String response) {

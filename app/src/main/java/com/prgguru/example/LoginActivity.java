@@ -6,7 +6,11 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,6 +25,8 @@ import com.loopj.android.http.RequestParams;
  *
  */
 public class LoginActivity extends Activity {
+	private final static String loginURI = "bookmarked/login/dologin";
+
 	// Progress Dialog Object
 	ProgressDialog prgDialog;
 	// Error Msg TextView Object
@@ -29,6 +35,7 @@ public class LoginActivity extends Activity {
 	EditText emailET;
 	// Passwprd Edit View Object
 	EditText pwdET;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -45,11 +52,47 @@ public class LoginActivity extends Activity {
         prgDialog.setMessage("Please wait...");
         // Set Cancelable as False
         prgDialog.setCancelable(false);
+
+		// set default values in the app's SharedPreferences
+		PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+
+		// register listener for SharedPreferences changes
+		PreferenceManager.getDefaultSharedPreferences(this).
+				registerOnSharedPreferenceChangeListener(
+						preferenceChangeListener);
+
 	}
-	
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.login, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	// displays SettingsActivity when running on a phone
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		Intent preferencesIntent = new Intent(this, SettingsActivity.class);
+		preferencesIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(preferencesIntent);
+		return super.onOptionsItemSelected(item);
+	}
+
+	private SharedPreferences.OnSharedPreferenceChangeListener preferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
+
+		@Override
+		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+			if (key.equals("prefs_server")) // # of choices to display changed
+			{
+				System.out.println("prefs.server:" + sharedPreferences.getString("prefs.server",""));
+			}
+		}
+	};
+
 	/**
 	 * Method gets triggered when Login button is clicked
-	 * 
+	 *
 	 * @param view
 	 */
 	public void loginUser(View view){
@@ -92,13 +135,17 @@ public class LoginActivity extends Activity {
 		 prgDialog.show();
 		 // Make RESTful webservice call using AsyncHttpClient object
 		 AsyncHttpClient client = new AsyncHttpClient();
-         client.get("http://192.168.43.17:9999/useraccount/login/dologin",params ,new AsyncHttpResponseHandler() {
+		String hostAddress = "http://" + Utility.getHostAddress(this) + "/";
+
+		System.out.println("**** IP: " + hostAddress + loginURI);
+		client.get(hostAddress+loginURI, params ,new AsyncHttpResponseHandler() {
         	 // When the response returned by REST has Http response code '200'
              @Override
              public void onSuccess(String response) {
             	 // Hide Progress Dialog
             	 prgDialog.hide();
                  try {
+					 	 System.out.println("in onSuccess. Response:" + response);
                 	 	 // JSON Object
                          JSONObject obj = new JSONObject(response);
                          // When the JSON response has status boolean value assigned with true

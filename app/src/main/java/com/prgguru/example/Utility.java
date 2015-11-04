@@ -1,5 +1,8 @@
 package com.prgguru.example;
 
+import android.content.Context;
+import android.preference.PreferenceManager;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
@@ -34,5 +37,10 @@ public class Utility {
 	 */
 	public static boolean isNotNull(String txt){
 		return txt!=null && txt.trim().length()>0 ? true: false;
+	}
+
+
+	public static String getHostAddress(Context context) {
+		return PreferenceManager.getDefaultSharedPreferences(context).getString("prefs_server","192.168.0.10");
 	}
 }

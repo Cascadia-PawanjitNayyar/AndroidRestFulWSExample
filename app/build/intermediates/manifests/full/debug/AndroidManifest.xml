@@ -18,6 +18,10 @@
         <activity
             android:name="com.prgguru.example.RegisterActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.prgguru.example.LoginActivity"
+            android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,12 +29,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.prgguru.example.LoginActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
-        <activity
             android:name="com.prgguru.example.HomeActivity"
             android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.prgguru.example.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.prgguru.example.BookActivity"
+            android:label="@string/title_activity_book" >
         </activity>
     </application>
 

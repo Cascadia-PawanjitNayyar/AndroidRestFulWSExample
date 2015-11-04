@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.prgguru.example.BookActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:text="@string/text_book_title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <!-- Name Label -->
+
+        <!-- ISBN -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isbn" />
+
+        <EditText
+            android:id="@+id/bookIsbn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book ISBN" />
+
+        <!-- Book title -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_title" />
+
+        <EditText
+            android:id="@+id/bookTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book title"/>
+
+        <!-- Book author -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="@string/book_author" />
+
+        <EditText
+            android:id="@+id/bookAuthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book author"/>
+
+        <!-- Book edition -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="@string/book_edition" />
+
+        <EditText
+            android:id="@+id/bookEdition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter edition"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="@string/book_description" />
+
+        <EditText
+            android:id="@+id/bookDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book description"/>
+
+
+        <Button
+            android:id="@+id/btnAddOrEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ff6347"
+            android:onClick="onAddEditClicked"
+            android:text="Add or Edit"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:onClick="onCancelClicked"
+            android:text="Cancel"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+
+        <!-- Link to Login Screen -->
+
+
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/res/layout/activity_book.xml -->

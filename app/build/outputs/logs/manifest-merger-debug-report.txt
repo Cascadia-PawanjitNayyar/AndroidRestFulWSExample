@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml
@@ -29,7 +29,7 @@ ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/And
 	android:name
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:11:22-64
 application
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:13:5-35:19
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:13:5-44:19
 MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:16:9-41
@@ -40,30 +40,42 @@ MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/seanchung/bit272/Ex
 	android:theme
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:17:9-40
 activity#com.prgguru.example.RegisterActivity
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:18:9-26:20
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:18:9-21:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:20:13-45
 	android:name
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:19:13-64
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:21:13-25:29
-action#android.intent.action.MAIN
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:22:17-69
-	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:22:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:24:17-77
-	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:24:27-74
 activity#com.prgguru.example.LoginActivity
-ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:27:9-30:20
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:22:9-30:20
 	android:label
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:29:13-57
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:24:13-57
 	android:name
-		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:28:13-61
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:23:13-61
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.prgguru.example.HomeActivity
 ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:31:9-34:20
 	android:label
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
 		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:32:13-60
+activity#com.prgguru.example.SettingsActivity
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:35:9-38:20
+	android:label
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:37:13-60
+	android:name
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:36:13-45
+activity#com.prgguru.example.BookActivity
+ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:39:9-42:20
+	android:label
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:41:13-56
+	android:name
+		ADDED from /Users/seanchung/bit272/Ex2/AndroidRestFulWSExample1/app/src/main/AndroidManifest.xml:40:13-41
